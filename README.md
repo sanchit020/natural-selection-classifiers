@@ -1,13 +1,9 @@
 #  Natural Selection for Classifier
 
-
-Short project description
-
----
-
 ##  Overview
+This project presents an implementation of a Genetic Algorithm for binary classification, inspired by the principles of natural selection and evolutionary computation. The workflow begins by preprocessing the Wine Dataset and projecting it into a two-dimensional feature space using Principal Component Analysis (PCA). A population of candidate classifiers is then initialized and iteratively improved through fitness evaluation, selection, crossover, and mutation.
 
-Project explanation...
+The evolutionary process aims to maximize classification accuracy by discovering an optimal decision boundary. Throughout training, the project visualizes the original dataset, the binary classification problem, the evolved classifier, and the progression of fitness across generations. This implementation serves as an educational demonstration of how evolutionary algorithms can be applied to supervised machine learning problems as an alternative to traditional optimization techniques.
 
 ---
 

@@ -1,129 +1,123 @@
-#  Natural Selection for Classifiers
+#  Natural Selection for Classifier
 
-> **Survival of the Fittest: An Evolutionary Computation Approach to Classification**
 
-This project explores how **Genetic Algorithms (GA)** can evolve classification boundaries without relying on traditional gradient-based optimization. Inspired by natural evolution, candidate solutions compete, reproduce, and mutate over generations to discover effective decision boundaries for machine learning tasks.
+Short project description
 
 ---
 
 ##  Overview
 
-Traditional machine learning models learn by minimizing a loss function using gradient descent. This project investigates an alternative approach where classification rules evolve through **selection, crossover, and mutation**, mimicking biological evolution.
+Project explanation...
 
-The project demonstrates evolutionary optimization on the **Wine Dataset** from Scikit-learn, using **Principal Component Analysis (PCA)** for visualization and binary classification experiments.
+---
+
+##  Methodology
+
+1. Load Wine Dataset
+2. PCA Projection
+3. Genetic Algorithm
+4. Evolve Decision Boundary
+
+---
+
+##  Dataset Visualization
+
+The Wine dataset is projected into two dimensions using Principal Component Analysis (PCA) to visualize the separability of the classes.
+
+<p align="center">
+  <img src="images/wine_dataset.png" width="700">
+</p>
+
+---
+
+##  Binary Classification Dataset
+
+The original three-class dataset is converted into a binary classification problem before applying the evolutionary algorithm.
+
+<p align="center">
+  <img src="images/binary_classification.png" width="700">
+</p>
+
+---
+
+##  Evolutionary Decision Boundary
+
+After multiple generations, the Genetic Algorithm evolves a classifier capable of separating the two classes.
+
+<p align="center">
+  <img src="images/evolved_decision.png" width="700">
+</p>
+
+---
+
+##  Evolution of Fitness
+
+The figure below shows how the population improves over successive generations. The best fitness converges quickly, while the average fitness steadily approaches the optimum.
+
+<p align="center">
+  <img src="images/evolution_fitness.png" width="700">
+</p>
 
 ---
 
 ##  Features
 
-- Evolutionary approach to classification
-- Genetic Algorithm implementation from scratch
-- Binary classification using the Wine dataset
-- PCA-based visualization of decision boundaries
-- Fitness evaluation using classification accuracy
-- Visualization of evolutionary progress
-- Easy-to-understand notebook with explanations
+- Genetic Algorithm from scratch
+- PCA visualization
+- Binary classification
+- Evolutionary optimization
+- Fitness-based selection
+- Decision boundary visualization
 
 ---
 
-##  Technologies Used
+## 🛠 Technologies
 
 - Python
 - NumPy
 - Pandas
 - Matplotlib
-- Seaborn
 - Scikit-learn
-
----
-
-##  Project Structure
-
-```
-natural-selection-for-classifiers/
-│
-├── natural-selection-for-classifiers.ipynb
-├── README.md
-└── images/               # (Optional) Visualizations
-```
-
----
-
-##  Workflow
-
-1. Load the Wine Dataset
-2. Preprocess and standardize features
-3. Reduce dimensions using PCA
-4. Create a binary classification dataset
-5. Initialize a population of candidate classifiers
-6. Evaluate fitness using prediction accuracy
-7. Apply selection, crossover, and mutation
-8. Repeat for multiple generations
-9. Visualize the evolved decision boundary
-
----
-
-##  Dataset
-
-**Wine Dataset**
-
-- Source: Scikit-learn
-- Originally 13 features
-- Reduced to 2 principal components using PCA
-- Binary classification (Class 0 vs Class 1)
-
----
-
-##  Objectives
-
-- Demonstrate evolutionary computation for classification.
-- Compare nature-inspired optimization with traditional learning approaches.
-- Visualize how decision boundaries improve through evolution.
-- Provide an educational implementation of Genetic Algorithms.
-
----
-
-## 📈 Future Improvements
-
-- Multi-class classification
-- Different selection strategies
-- Adaptive mutation rates
-- Parallel fitness evaluation
-- Hybrid Genetic Algorithm + Neural Networks
-- Benchmark against traditional ML classifiers
 
 ---
 
 ##  Getting Started
 
-Clone the repository:
-
 ```bash
-git clone https://github.com/<your-username>/natural-selection-for-classifiers.git
+git clone https://github.com/sanchit020/natural-selection-for-classifiers.git
+
+cd natural-selection-for-classifiers
+
+pip install numpy pandas matplotlib scikit-learn
 ```
 
-Install dependencies:
-
-```bash
-pip install numpy pandas matplotlib seaborn scikit-learn
-```
-
-Launch Jupyter Notebook:
+Run
 
 ```bash
 jupyter notebook
 ```
 
-Open:
+---
+
+##  Repository Structure
 
 ```
-natural-selection-for-classifiers.ipynb
+natural-selection-for-classifiers
+│
+├── natural-selection-for-classifiers.ipynb
+├── README.md
+└── images
+    ├── wine_dataset.png
+    ├── binary_classification.png
+    ├── evolved_decision.png
+    └── evolution_fitness.png
 ```
 
 ---
 
 
+---
 
-## 👨‍💻 Author
+##  Author
 
 **Sanchit Saini**
